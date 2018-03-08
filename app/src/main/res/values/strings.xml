@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="titulo">Formulario Registro</string>
+    <string name="login">Usuario:</string>
+    <string name="psw">Contraseña:</string>
+    <string name="psw2">Repetir Contraseña:</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="sexo">Sexo:</string>
+    <string name="correo">Correo:</string>
+    <string name="nadar">Nadar</string>
+    <string name="leer">Leer</string>
+    <string name="viajar">Viajar</string>
+    <string name="pintar">Pintar</string>
+    <string name="ok">Enviar</string>
+    <string name="fecha">Fecha de nacimiento</string>
+
+
+
+</resources>

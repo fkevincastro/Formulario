@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fkevincastro.formulario.MainActivity"
+    android:background="@color/black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp"
+            android:background="@color/gray"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/titulo"
+                android:textColor="@color/aquamarine"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="Suspicious0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/login"
+                    android:textColor="@color/aquamarine"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/eUser"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="113dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/psw"
+                    android:textColor="@color/aquamarine"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@color/orange"
+                    android:singleLine="true"
+                    android:background="@color/gray"
+                    android:layout_margin="2dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/ePsw1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/psw2"
+                    android:textColor="@color/aquamarine"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@color/orange"
+                    android:background="@color/gray"
+                    android:singleLine="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/epsw2"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/correo"
+                    android:textColor="@color/aquamarine"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@color/orange"
+                    android:background="@color/gray"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:layout_margin="2dp"
+                    android:id="@+id/eMail"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/sexo"
+                    android:textColor="@color/aquamarine"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/gray"
+                    android:layout_margin="2dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/masculino"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"
+
+                        android:onClick="OnRadioButtonClicked"
+                        android:id="@+id/rMale"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/femenino"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"
+                        android:shadowColor="@color/orange"
+                        android:onClick="OnRadioButtonClicked"
+                        android:id="@+id/rFemale"/>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:text="@string/fecha"
+                    android:textColor="@color/aquamarine"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"
+                    android:id="@+id/bfecha"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp">
+
+                    <Spinner
+                        android:id="@+id/sPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/cNadar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/aquamarine"
+                        android:background="@color/gray"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="@string/nadar" />
+
+                    <CheckBox
+                        android:id="@+id/cLeer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/aquamarine"
+                        android:background="@color/gray"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="@string/leer" />
+
+                    <CheckBox
+                        android:id="@+id/cViajar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/aquamarine"
+                        android:background="@color/gray"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="@string/viajar" />
+
+                    <CheckBox
+                        android:id="@+id/cPintar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/aquamarine"
+                        android:background="@color/gray"
+                        android:onClick="onCheckBoxClicked"
+                        android:text="@string/pintar" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:text="@string/ok"
+                        android:id="@+id/bEnviar"
+                        android:onClick="OnEnviarClicked"
+                        android:textColor="@color/darkorange"
+                        android:textSize="20sp"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray"
+                    android:textColor="@color/orange"
+                    android:id="@+id/tSalida"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
